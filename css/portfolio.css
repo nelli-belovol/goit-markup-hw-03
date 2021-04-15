@@ -1,0 +1,139 @@
+:root {
+  --main-cl: #ffffff;
+  --main-txt-cl: #757575;
+  --title-cl: #212121;
+  --accent-cl: #2196f3;
+  --dark-bg-cl: #2f303a;
+  --team-button-bg: #f5f4fa;
+  --footer-link-cl: color: rgba(255, 255, 255, 0.6);
+
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+}
+/*
+text nav color, title text body: #212121;
+text contacts nav color, text body : #757575;
+text dark block, button dark block, hover button txt, address: color: #FFFFFF;
+accent color: #2196F3;
+background dark color: #2F303A;
+team-block color, background button: #F5F4FA;
+*/
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.link {
+  color: var(--title-cl);
+  text-decoration: none; /*убираем подчеркивание ссылок*/
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.portfolio{
+  color:var(--accent-cl);
+}
+
+.contacts .link{
+  color:var(--main-txt-cl);
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
+span {
+  color: var(--accent-cl);
+}
+
+/*убираем маркировку списка*/
+.list {
+  list-style: none;
+}
+
+.dark-bg {
+  background-color: var(--dark-bg-cl);
+}
+
+.filter {
+  background-color: var(--team-button-bg);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-cl);
+  cursor: pointer;
+}
+
+.filter:hover,
+.filter:focus {
+  background-color: var(--accent-cl);
+  color: var(--main-cl);
+}
+
+/* */
+
+/*класс, скрывающий элементы*/
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+h2 {
+  color: var(--title-cl);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+li > p {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.dark-bg {
+  line-height: 1.7;
+  color: var(--main-cl);
+}
+
+footer li {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer .logo {
+  color: var(--main-cl);
+}
+
+/*убираем курсив в футере, путем наследования стилей от родителя*/
+.address {
+  font-style: inherit;
+}
+
+.address .link{
+  color:var(--footer-link-cl)
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}

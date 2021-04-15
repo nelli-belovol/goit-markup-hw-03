@@ -1,0 +1,225 @@
+:root {
+  --main-cl: #ffffff;
+  --main-txt-cl: #757575;
+  --title-cl: #212121;
+  --accent-cl: #2196f3;
+  --dark-bg-cl: #2f303a;
+  --team-button-bg: #f5f4fa;
+  --footer-link-cl: color: rgba(255, 255, 255, 0.6);
+
+  --main-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway', sans-serif;
+}
+/*
+text nav color, title text body: #212121;
+text contacts nav color, text body : #757575;
+text dark block, button dark block, hover button txt, address: color: #FFFFFF;
+accent color: #2196F3;
+background dark color: #2F303A;
+team-block color, background button: #F5F4FA;
+*/
+
+html{
+  box-sizing: border-box;
+}
+
+*:before,
+*::after{
+  box-sizing:inherit;
+}
+
+/*убираем маркировку списка*/
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-txt-cl);
+}
+
+.container{
+  width:1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-header .container{
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+  justify-content: space-around;
+}
+
+.nav{
+  display: flex;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+margin-right: auto;
+}
+
+
+.contacts{
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts .menu-item{
+margin-left: 50px;
+}
+
+.list .menu-item {
+  margin-right: 50px;
+}
+
+.nav>.logo{
+margin-right: 93px;
+}
+
+.link {
+  color: var(--title-cl);
+  text-decoration: none; /*убираем подчеркивание ссылок*/
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.studio{
+  color:var(--accent-cl);
+}
+
+.contacts .link{
+  color:var(--main-txt-cl);
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: black;
+
+  display: block;
+}
+
+span {
+  color: var(--accent-cl);
+}
+
+
+.dark-bg {
+  background-color: var(--dark-bg-cl);
+}
+
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-cl);
+}
+.button {
+  background-color: var(--accent-cl);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* */
+
+/*класс, скрывающий элементы*/
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+h2,
+h3 {
+  color: var(--title-cl);
+}
+
+.advantages-item {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+#team {
+  background-color: var(--team-button-bg);
+}
+
+.team-item {
+  text-align: center;
+}
+
+.team-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.dark-bg {
+  line-height: 1.7;
+  color: var(--main-cl);
+}
+
+.team-item-position {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--main-txt-cl);
+}
+
+footer li {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer .logo {
+  color: var(--main-cl);
+}
+
+/*убираем курсив в футере, путем наследования стилей от родителя*/
+.address {
+  font-style: inherit;
+}
+
+.address .link{
+  color:var(--footer-link-cl)
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-cl);
+}
