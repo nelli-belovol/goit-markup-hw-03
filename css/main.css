@@ -78,7 +78,9 @@ body {
   display: flex;
   align-items: center;
   padding-top: 24px;
+  padding-bottom: 25px;
   justify-content: space-between;
+
 }
 
 .nav{
