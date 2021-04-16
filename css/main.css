@@ -241,7 +241,7 @@ h2 {
 
 .team-item {
   text-align: center;
-  width: calc(100%-12*3);
+  width: calc(100%/(12*3));
 }
 
 .team-item-name {
